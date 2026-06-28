@@ -72,9 +72,7 @@ if question:
 
     docs = retriever.invoke(question)
 
-    context = "
-
-".join(
+    context = "".join(
         d.page_content for d in docs
     )
 
