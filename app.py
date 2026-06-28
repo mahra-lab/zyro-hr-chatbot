@@ -18,7 +18,7 @@ st.set_page_config(a
 st.title("🏢 Zyro Dynamics HR Help Desk")
 st.caption("Ask questions about Zyro Dynamics HR policies.")
 
-PDF_PATH = "niat-masterclass-rag-challenge.zip
+PDF_PATH = "zyro-dynamics-hr-corpus"
 
 @st.cache_resource
 def load_rag():
