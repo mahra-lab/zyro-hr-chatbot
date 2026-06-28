@@ -9,7 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import os
 
-st.set_page_config(a
+st.set_page_config(
     page_title="Zyro HR Help Desk",
     page_icon="🏢",
     layout="wide"
