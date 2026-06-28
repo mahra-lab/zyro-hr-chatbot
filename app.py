@@ -9,7 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import os
 
-st.set_page_config(
+st.set_page_config(a
     page_title="Zyro HR Help Desk",
     page_icon="🏢",
     layout="wide"
@@ -18,7 +18,7 @@ st.set_page_config(
 st.title("🏢 Zyro Dynamics HR Help Desk")
 st.caption("Ask questions about Zyro Dynamics HR policies.")
 
-PDF_PATH = "zyro-dynamics-hr-corpus"
+PDF_PATH = "niat-masterclass-rag-challenge.zip
 
 @st.cache_resource
 def load_rag():
