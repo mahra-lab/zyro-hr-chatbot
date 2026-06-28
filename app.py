@@ -1,4 +1,3 @@
-app_code = '''
 import streamlit as st
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -62,9 +61,9 @@ Question:
 {question}
 """)
 
-    return retriever,llm,prompt
+    return retriever, llm, prompt
 
-retriever,llm,prompt = load_rag()
+retriever, llm, prompt = load_rag()
 
 question = st.chat_input("Ask your HR question...")
 
@@ -83,20 +82,14 @@ if question:
     )
 
     answer = chain.invoke({
-        "context":context,
-        "question":question
+        "context": context,
+        "question": question
     })
 
     st.chat_message("user").write(question)
-
     st.chat_message("assistant").write(answer)
 
     st.subheader("Sources")
 
     for d in docs:
-        st.write(
-            os.path.basename(
-                d.metadata["source"]
-            )
-        )
-'''
+        st.write(os.path.basename(d.metadata["source"]))
